@@ -7,7 +7,7 @@ image = cv2.imread(image_path)
 # 鼠标点击回调函数
 def click_event(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:
-        print(f"Clicked at: ({x}, {y})")
+        print(f"Clicked at: ({x}, {y}, {w}, {h})")
 
 # 显示图像，等待点击
 cv2.imshow("Click to get coordinates", image)
