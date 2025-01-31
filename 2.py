@@ -6,7 +6,7 @@ import numpy as np
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # 截图路径
-IMAGE_PATH = "frames_output/frame_0015.jpg"  # 替换为你的截图路径
+IMAGE_PATH = "frame_0251.jpg"  # 替换为你的截图路径
 
 def select_roi(image_path):
     """ 交互式选择 ROI（感兴趣区域），返回 (x, y, w, h) """
@@ -58,3 +58,9 @@ while cap.isOpened():
 cap.release()
 print(f"最高速度: {max_speed} km/h")
 print(f"最低速度: {min_speed} km/h")
+
+# 识别成功率
+detection_accuracy = (successful_detections / total_frames) * 100 if total_frames > 0 else 0
+print(f"最高速度: {max_speed} km/h")
+print(f"最低速度: {min_speed} km/h")
+print(f"OCR 识别成功率: {detection_accuracy:.2f}%")
