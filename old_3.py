@@ -3,8 +3,11 @@ import pytesseract
 import numpy as np
 import time
 
+# 这个是最原始的OCR识别，但是是基于视频的，识别率反而高，很困惑
 # 这个脚本没啥问题 微调一下 只需要选择窗口区域
 # 目前 这个脚本会交互式选择ROI感兴趣区域然后自动进行识别 但是我们手动做
+
+#对比这个脚本的参数和manual_image_ocr和selection_image_ocr的
 
 # 配置 Tesseract 路径（如果本地未自动识别，请修改为自己的路径）
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
