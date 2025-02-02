@@ -4,6 +4,7 @@ from pymediainfo import MediaInfo
 
 # 因为导出的图片都有旋转90度 所以要写一个脚本检测
 # 该脚本为正确脚本 用于检测视频的旋转方向
+# 如果检测下来没有旋转 则无需再次进行批处理
 
 def check_video_rotation(video_path):
     """ 使用 MediaInfo 检测视频旋转角度 """

@@ -6,7 +6,7 @@ import numpy as np
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # 截图路径
-IMAGE_PATH = "frames_output/frame_0015.jpg"  # 替换为你的截图路径
+IMAGE_PATH = "processed_images/frame_1120.jpg"  # 替换为你的截图路径
 
 def select_roi(image_path):
     """ 交互式选择 ROI（感兴趣区域），返回 (x, y, w, h) """

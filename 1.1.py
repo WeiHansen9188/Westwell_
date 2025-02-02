@@ -7,8 +7,8 @@ import os
 
 
 FRAME_INTERVAL = 10  # 每隔 10 帧提取一次
-VIDEO_PATH = "1.mp4"
-OUTPUT_FOLDER = "2_frames_output"  # 你希望保存帧的文件夹
+VIDEO_PATH = "your_video.mp4"
+OUTPUT_FOLDER = "images_pre_processed_1"  # 你希望保存帧的文件夹
 
 # 创建输出文件夹（如果不存在）
 if not os.path.exists(OUTPUT_FOLDER):

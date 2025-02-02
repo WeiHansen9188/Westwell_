@@ -2,8 +2,8 @@ from PIL import Image
 import os
 
 # 设置输入和输出文件夹路径
-input_folder = "3_frames_output"   # 原始图片文件夹
-output_folder = "newbestrotatedleft90" # 旋转后图片存放位置
+input_folder = "images_pre_processed_1"   # 原始图片文件夹
+output_folder = "images_final_rotated" # 旋转后图片存放位置
 
 # 确保输出文件夹存在
 os.makedirs(output_folder, exist_ok=True)
