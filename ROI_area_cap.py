@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 截图路径
-IMAGE_PATH = "frame_0761.jpg"  # 替换为你的截图路径
+IMAGE_PATH = "processed_images/frame_0920.jpg"  # 替换为你的截图路径
 
 def select_roi(image_path):
    

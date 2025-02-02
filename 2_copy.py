@@ -2,6 +2,8 @@ import cv2
 import pytesseract
 import numpy as np
 
+# 这个会同时画图
+
 # 配置 Tesseract 路径（如果本地未自动识别，请修改为自己的路径）
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 

@@ -6,12 +6,12 @@ import numpy as np
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # 截图路径
-IMAGE_PATH = "frame_0251.jpg"  # 替换为你的截图路径
+IMAGE_PATH = "processed_images/frame_0390.jpg"  # 替换为你的截图路径
 
 def select_roi(image_path):
     """ 交互式选择 ROI（感兴趣区域），返回 (x, y, w, h) """
     image = cv2.imread(image_path)
-    image = cv2.rotate(image, cv2.ROTATE_90_CLOCKWISE)  # 向右旋转90°
+    #image = cv2.rotate(image, cv2.ROTATE_90_CLOCKWISE)  # 向右旋转90°
     roi = cv2.selectROI("Select Speed Area", image, fromCenter=False, showCrosshair=True)
     cv2.destroyAllWindows()
     return roi
@@ -21,7 +21,7 @@ x, y, w, h = select_roi(IMAGE_PATH)
 print(f"选定区域: x={x}, y={y}, w={w}, h={h}")
 
 # 读取视频
-VIDEO_PATH = "20250130-140429.mp4"  # 修改为你的本地视频路径
+VIDEO_PATH = "your_video.mp4"  # 修改为你的本地视频路径
 cap = cv2.VideoCapture(VIDEO_PATH)
 
 # 记录最高和最低速度
@@ -60,7 +60,7 @@ print(f"最高速度: {max_speed} km/h")
 print(f"最低速度: {min_speed} km/h")
 
 # 识别成功率
-detection_accuracy = (successful_detections / total_frames) * 100 if total_frames > 0 else 0
-print(f"最高速度: {max_speed} km/h")
-print(f"最低速度: {min_speed} km/h")
-print(f"OCR 识别成功率: {detection_accuracy:.2f}%")
+#detection_accuracy = (successful_detections / total_frames) * 100 if total_frames > 0 else 0
+#print(f"最高速度: {max_speed} km/h")
+#print(f"最低速度: {min_speed} km/h")
+#print(f"OCR 识别成功率: {detection_accuracy:.2f}%")
