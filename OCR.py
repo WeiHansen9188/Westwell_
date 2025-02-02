@@ -3,7 +3,7 @@ import cv2
 import OCR_init
 
 
-video_path = "20250130-140429.mp4"
+video_path = "your_video.mp4"
 
 
 # 读取视频

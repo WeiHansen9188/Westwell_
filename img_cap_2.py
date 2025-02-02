@@ -1,7 +1,9 @@
 import cv2
 
+# 这个脚本有点问题 暂时不要用
+
 # 视频文件路径
-video_path = "20250130-140429.mp4"
+video_path = "your_video.mp4"
 
 # 读取视频
 cap = cv2.VideoCapture(video_path)

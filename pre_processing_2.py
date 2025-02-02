@@ -2,8 +2,11 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
+#正确脚本：灰度处理 对比度增强 去雾 显示增强后的图片
+
+
 # 读取图像
-image_path = "frame_0029.jpg"
+image_path = "newbestrotatedleft90/frame_0947.jpg"
 img = cv2.imread(image_path)
 
 # 1️⃣ 转换为灰度图
@@ -29,6 +32,6 @@ plt.subplot(1, 2, 2), plt.imshow(enhanced, cmap='gray'), plt.title("增强后图
 plt.show()
 
 # 5️⃣ 保存处理后的图片
-output_path = "processed_new/enhanced_image0029.png"
+output_path = "/123123123123123123123/enhanced_image0029.png"
 cv2.imwrite(output_path, enhanced)
 print(f"增强后的图片已保存：{output_path}")

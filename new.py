@@ -2,7 +2,7 @@ import cv2
 import os
 
 # 1️⃣ 设置视频路径
-VIDEO_PATH = "20250130-140429.mp4"  # 修改为你本地的视频路径
+VIDEO_PATH = "your_video.mp4"  # 修改为你本地的视频路径
 OUTPUT_FOLDER = "frames_output"  # 保存帧的文件夹
 
 # 2️⃣ 创建输出文件夹（如果不存在）

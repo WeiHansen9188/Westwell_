@@ -1,7 +1,9 @@
 import cv2
 
+# 获取视频的帧率、总帧数和分辨率
+
 # 视频文件路径
-video_path = "20250130-140429.mp4"
+video_path = "your_video.mp4"
 
 # 读取视频基本信息
 cap = cv2.VideoCapture(video_path)  #video path
